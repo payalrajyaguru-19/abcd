@@ -1,7 +1,39 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App()
+{
+  // let x;
+  // x=5;
+  // console.log(x);
+
+  // const x
+  // x=5;
+  // console.log(x);
+
+  // let x=5
+  // {
+  //   let x=10;
+  // }
+  // console.log(x);
+
+  // const x=5
+  // {
+  //   const x=10;
+  // }
+  // console.log(x);
+
+//  const display =(name, id) =>{
+//     console.log(name,id);
+//  }
+//  display("payal", 6500)
+
+// let grid =[12,18,26,27,35]
+//   console.log(grid);
+
+
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,7 +47,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn React with rnw
         </a>
       </header>
     </div>
