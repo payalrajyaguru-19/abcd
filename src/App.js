@@ -1,75 +1,140 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App()
-{
-          //array
+function App() {
+    // let data = 
 
-  // let arr = [11,25,37,42,67];
-  // let arr1 = [99,100];
+  // [
+  //   {
+  //     id: 101,
+  //     name: 'Abacavir',
+  //     quantity: 25,
+  //     price: 150,
+  //     expiry: 2022,
+  //     status: true
+  //   },
+  //   {
+  //     id: 102,
+  //     name: 'Eltrombopag',
+  //     quantity: 90,
+  //     price: 550,
+  //     expiry: 2021,
+  //     status: true
+  //   },
+  //   {
+  //     id: 103,
+  //     name: 'Meloxicam',
+  //     quantity: 85,
+  //     price: 450,
+  //     expiry: 2025,
+  //     status: false
+  //   },
+  //   {
+  //     id: 104,
+  //     name: 'Allopurinol',
+  //     quantity: 50,
+  //     price: 600,
+  //     expiry: 2023,
+  //     status: true
+  //   },
+  //   {
+  //     id: 105,
+  //     name: 'Phenytoin',
+  //     quantity: 63,
+  //     price: 250,
+  //     expiry: 2021,
+  //     status: false
+  //   }
+  // ];
 
-  // let newArr = arr.concate (arr1);
-  // console.log(arr);
+  // return (
+  //   <div>
+  //     {Data.map((v, i) => {
+  //       return (
+  //         <div key={i}>
+  //           <h1>{v.name}</h1>
+  //           <h2>{v.price}</h2>
+  //         </div>
+  //       );
+  //     })}
+  //   </div>
+  // );
 
-  // let arr = [19,35,68,65,89];
-  // let ans = arr.some ((a) => a > 40);    //true
-  // console.log(ans);
-  
-  // let arr,toString= ['29,58,69,77,89'];
-  //  console.log(arr.toString);
+  // //filter
 
-  // let arr = [11,45,66,56,88]
-  // let ans = arr.find ((a) => a > 60);    //66
-  // console.log(ans);
- 
-  // let arr = [11,25,37,42,67];
-  // arr.splice(2 ,0, 35)      / [11, 25, 35, 37, 42, 67]
-  // console.log(arr);
+  // let fData = Data.filter((v, i) => v.expiry >= 2022 && v.status === true);
+  // console.log(fData);
 
-  //  let arr = [12,25,37,52,77];
-  //  arr.splice(2 ,1)      // [12, 25, 52, 77]
-  //  console.log(arr);
+  // //reduce
 
-      //Object
-
-  // let obj ={
-  //   id : 6500 ,
-  //   name : "payal"        //6500 'payal'
-  // }    
-  // console.log(obj.id ,obj['name']);
+  // let totalprice = fData.reduce((acc, v, i) => acc + v.price, 0 );
+  // console.log(totalprice)
 
 
 
-  // let x;
-  // x=5;
-  // console.log(x);
+//   //  Employee Data
 
-  // const x
-  // x=5;
-  // console.log(x);
+//   let data= 
+//   [
+//     {
+//       name: "amit",
+//       age: 35,
+//       salary: 40000,
+//       bonus: 1000,
+//       status: true
+//     },
+//     {
+//       name: "ajay",
+//       age: 25,
+//       salary: 38000,
+//       bonus: 2000,
+//       status: false
+//     },
+//     {
+//       name: "mayur",
+//       age: 23,
+//       salary: 50000,
+//       bonus: 500,
+//       status: true
+//     },
+//     {
+//       name: "jay",
+//       age: 29,
+//       salary: 35000,
+//       bonus: 600,
+//       status: true
+//     },
+//     {
+//       name: "raj",
+//       age: 33,
+//       salary: 22000,
+//       bonus: 2000,
+//       status: true
+//     },
+//   ];
+// //filter
+// let fdata = data.filter((v, i) => v.salary >= 2022 && v.status === true);
+// console.log(fdata);
 
-  // let x=5
-  // {
-  //   let x=10;
-  // }
-  // console.log(x);
+// //reduce
+// let totalprice = fdata.reduce((acc, v, i) => acc + v.price, 0 );
+// console.log(totalprice);
 
-  // const x=5
-  // {
-  //   const x=10;
-  // }
-  // console.log(x);
-
-//  const display =(name, id) =>{
-//     console.log(name,id);
-//  }
-//  display("payal", 6500)
-
-// let grid =[12,18,26,27,35]
-//   console.log(grid);
-
-
-
+//   return (
+//     <div>
+//       {data.map((v, i,) => {
+//         return (
+//           <div key={i}>
+//             <h1>{v.name}</h1>
+//             <h2>{v.salary}</h2>
+//             <h3>{v.bonus}</h3>
+//           </div>
+//         );
+//       })}
+//     </div>
+//   );
+// };
+// };
 
   return (
     <div className="App">
@@ -84,7 +149,7 @@ function App()
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React with rnw
+          Learn React
         </a>
       </header>
     </div>
