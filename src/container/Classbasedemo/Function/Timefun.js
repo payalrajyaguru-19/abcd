@@ -1,24 +1,26 @@
 import React, { useEffect, useState } from 'react'
 
-export default function Timefun(props) {
-    const [state, setstate] = useState(NewDate());
+ function Timefun(props) {
+    const [Time , setTime] = useState(new Date());
 
-    const tick =()=>{
+    const tick = () => {
         setTime(new Date())
     }
-    useEffect(() =>{
+    useEffect (() => {
+
         //1.componentDidMount 2.componentDidupdate
-        let timeD = setInterval(()=>tick(),1000)
-        console.log("componentDidUpdate");
+        let TimeD = setInterval(() => tick(),1000)
+        // console.log("componentDidUpdate");
 
         //3.componentWillUnmount
-        return()=>{
-        clearInterval(timeD)
+        return () => {
+        clearInterval(TimeD)
         }
-    })[time]
+    },[Time])
   return (
     <div>
-        <p>{time.toLocalTimeString()}</p>
+        <p>{Time.toLocaleTimeString()}</p>
     </div>
   )
 }
+export default Timefun;
