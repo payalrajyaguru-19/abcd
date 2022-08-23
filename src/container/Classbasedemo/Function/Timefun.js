@@ -10,7 +10,7 @@ import React, { useEffect, useState } from 'react'
 
         //1.componentDidMount 2.componentDidupdate
         let TimeD = setInterval(() => tick(),1000)
-        // console.log("componentDidUpdate");
+        console.log("componentDidUpdate");
 
         //3.componentWillUnmount
         return () => {
